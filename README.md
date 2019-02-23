@@ -8,7 +8,7 @@ sending morsecode
 The gnu-radio companion example uses a hackRF to send a cw morse-code on 434.500 Mhz.
 
 
-The python code itself is located inside the "pocsag generator" epy_block and as a seperate file "gr-morsecode-enc.py".
+The python code itself is located inside the "morsecode encoder" epy_block and as a seperate file "gr-morsecode-enc.py".
 
 
 
