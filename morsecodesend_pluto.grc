@@ -1,0 +1,888 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?grc format='1' created='3.7.9'?>
+<flow_graph>
+  <timestamp>Tue Aug 14 22:09:38 2018</timestamp>
+  <block>
+    <key>options</key>
+    <param>
+      <key>author</key>
+      <value></value>
+    </param>
+    <param>
+      <key>window_size</key>
+      <value></value>
+    </param>
+    <param>
+      <key>category</key>
+      <value>Custom</value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>description</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(8, 8)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>generate_options</key>
+      <value>wx_gui</value>
+    </param>
+    <param>
+      <key>hier_block_src_path</key>
+      <value>.:</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>top_block</value>
+    </param>
+    <param>
+      <key>max_nouts</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>qt_qss_theme</key>
+      <value></value>
+    </param>
+    <param>
+      <key>realtime_scheduling</key>
+      <value></value>
+    </param>
+    <param>
+      <key>run_command</key>
+      <value>{python} -u {filename}</value>
+    </param>
+    <param>
+      <key>run_options</key>
+      <value>prompt</value>
+    </param>
+    <param>
+      <key>run</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>thread_safe_setters</key>
+      <value></value>
+    </param>
+    <param>
+      <key>title</key>
+      <value></value>
+    </param>
+  </block>
+  <block>
+    <key>variable</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(400, 23)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>180</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>PlutoSDR_freq</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>434.5e6</value>
+    </param>
+  </block>
+  <block>
+    <key>variable</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(496, 23)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>PlutoSDR_samp_rate</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>960e3</value>
+    </param>
+  </block>
+  <block>
+    <key>variable</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(624, 23)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>samp_rate</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>int(48e3)</value>
+    </param>
+  </block>
+  <block>
+    <key>analog_sig_source_x</key>
+    <param>
+      <key>amp</key>
+      <value>0.9</value>
+    </param>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>freq</key>
+      <value>700</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(144, 68)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>analog_sig_source_x_0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>offset</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>complex</value>
+    </param>
+    <param>
+      <key>samp_rate</key>
+      <value>samp_rate</value>
+    </param>
+    <param>
+      <key>waveform</key>
+      <value>analog.GR_COS_WAVE</value>
+    </param>
+  </block>
+  <block>
+    <key>audio_sink</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>device_name</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(840, 158)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>audio_sink_0</value>
+    </param>
+    <param>
+      <key>num_inputs</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>ok_to_block</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>samp_rate</key>
+      <value>samp_rate</value>
+    </param>
+  </block>
+  <block>
+    <key>blocks_complex_to_float</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(464, 159)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>blocks_complex_to_float_0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>vlen</key>
+      <value>1</value>
+    </param>
+  </block>
+  <block>
+    <key>blocks_multiply_xx</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(336, 159)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>blocks_multiply_xx_0</value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>complex</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>num_inputs</key>
+      <value>2</value>
+    </param>
+    <param>
+      <key>vlen</key>
+      <value>1</value>
+    </param>
+  </block>
+  <block>
+    <key>epy_block</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_io_cache</key>
+      <value>('morsecode encoder', 'morsecode_enc', [('wpm', '18'), ('samplerate', '48000'), ('sleeptime', '5'), ('text', "'CQ CQ CQ CQ DE ON1ARF ON1ARF K'")], [], [('0', 'complex')], '')</value>
+    </param>
+    <param>
+      <key>_source_code</key>
+      <value>"""
+Embedded Python Blocks:
+
+Each this file is saved, GRC will instantiate the first class it finds to get
+ports and parameters of your block. The arguments to __init__  will be the
+parameters. All of them are required to have default values!
+
+
+"""
+#gr-morsecode-enc: a morse-code encoder
+#-----------------------------------------------------------------------
+#
+#
+#This is the alpha test release of gr-morsecode-enc, a embedded python block for generating and
+#sending morse-code.
+#
+#The python code itself is located inside the "morse-code generator" epy_block and as a seperate file "gr-morsecode-enc.py".
+#
+#
+# (C) Kristoff Bonne, ON1ARF
+# GPL v3
+#
+#Release-information:
+#Version: 0.0.1 (20190221)
+#
+# 73s . kristoff - ON1ARF
+
+
+import numpy as np
+from gnuradio import gr
+
+from bitstring import BitArray
+
+import time
+
+
+
+class morsecode_enc(gr.sync_block):
+	def __createmorsecode(self, text):
+		morsecode={
+		'A': '.-',     'B': '-...',   'C': '-.-.', 
+		'D': '-..',    'E': '.',      'F': '..-.',
+		'G': '--.',    'H': '....',   'I': '..',
+		'J': '.---',   'K': '-.-',    'L': '.-..',
+		'M': '--',     'N': '-.',     'O': '---',
+		'P': '.--.',   'Q': '--.-',   'R': '.-.',
+		'S': '...',    'T': '-',      'U': '..-',
+		'V': '...-',   'W': '.--',    'X': '-..-',
+		'Y': '-.--',   'Z': '--..',
+
+		'0': '-----',  '1': '.----',  '2': '..---',
+		'3': '...--',  '4': '....-',  '5': '.....',
+		'6': '-....',  '7': '--...',  '8': '---..',
+		'9': '----.',
+		'.': '.-.-.-',	',': '--..--',	'?': '..--..',
+		'!': '-.-.--', '-': '-....-', '/': '-..-.',
+		':': '---...',	'\'':'.----.',	')': '-.--.-',
+		';': '-.-.-',	'(': '-.--.',	'=': '-...-',
+		'@': '.--.-.',	'&amp;': '.-...'
+		}
+
+		cwtext=""
+
+		count_w=0
+		for word in text.split():
+			cwtext += "0000000" if count_w &gt; 0 else ""
+			count_w += 1
+
+			count_c=0
+			for c in word:
+				# if not first char in word, add space to previous char
+				cwtext += "000" if count_c &gt; 0 else ""
+				count_c+=1
+
+				try:
+					cwcode=morsecode[c.upper()]
+				except KeyError:
+					raise ValueError(c)
+				#end try
+
+
+				count_cw=0
+				for b in cwcode:
+					cwtext += "0" if count_cw &gt; 0 else ""
+					count_cw +=1
+
+					if b == ".":
+						cwtext+="1"
+					elif b == "-":
+						cwtext+="111"
+					else:
+						raise ValueError(b)
+					#end else - elif - if
+				#end for (cwcode)
+
+			#end for (characters)
+
+		# end for (words)
+		return(cwtext)
+	#end def __createmorsecode
+
+
+
+	def __init__(self, wpm = 18, samplerate = 48000, sleeptime= 5, text="CQ CQ CQ CQ DE ON1ARF ON1ARF K"):  # only default arguments here
+		gr.sync_block.__init__(
+			self,
+			name='morsecode encoder',
+			in_sig=[],
+			out_sig=[np.complex64]
+		)
+
+
+
+		# morse-code speed is defined as "Words per minute". This "word" is "Paris" (50 time-units)
+		# one timeunit = 60 / (50 * wpm), ... or 1.2 / wpm
+		# number of samples per timeunit = timeunit * samplerate
+
+		self.numsamp=int(round(samplerate*1.2/wpm))
+		self.numsamp_sleep = int(round(samplerate * sleeptime / self.numsamp))
+
+
+		self.cwmessage = self.__createmorsecode(text)
+		self.cwmessagelen = len(self.cwmessage)
+		# we send packers of "numsamp" samples
+		self.set_output_multiple(self.numsamp)
+
+		# state machine
+		self.state = 0
+		self.scount=0
+
+
+		#tone or no tone
+		self.tone=[np.complex(1) for j in range(self.numsamp)]
+		self.notone=[np.complex(0) for j in range(self.numsamp)]
+
+
+	#end __init__
+
+
+	def work(self, input_items, output_items):
+
+		while True:
+			if self.state == 0:
+				# state 0 -&gt; send cw message
+
+				if self.scount &gt;= self.cwmessagelen:
+					# got to state 1 if complete message is send
+					self.state=1
+					self.scount=0
+				else:
+					# send character and go to next char
+					output_items[0][:self.numsamp]=self.tone if self.cwmessage[self.scount] == "1" else self.notone
+					self.scount += 1
+					return self.numsamp
+				#end else - if
+
+			elif self.state == 1:
+				# state 1 -&gt; silence (sleeping)
+				if self.scount &gt;= self.numsamp_sleep:
+					# got to state 0 if done sleeping
+					self.state=0
+					self.scount=0
+				else:
+					# send silence
+					output_items[0][:self.numsamp]=self.notone
+					self.scount += 1
+					return self.numsamp
+				#end else - if
+
+			else:
+				# unknown state.
+				# we should never come here, re-init
+				self.state=0
+				self.scount=0
+
+			#end state machine
+
+		#end endless loop
+
+	#end work
+# end class "morsecode_enc"
+
+</value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(48, 170)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>epy_block_0</value>
+    </param>
+    <param>
+      <key>samplerate</key>
+      <value>48000</value>
+    </param>
+    <param>
+      <key>sleeptime</key>
+      <value>5</value>
+    </param>
+    <param>
+      <key>text</key>
+      <value>'CQ CQ CQ CQ DE ON1ARF ON1ARF K'</value>
+    </param>
+    <param>
+      <key>wpm</key>
+      <value>18</value>
+    </param>
+  </block>
+  <block>
+    <key>import</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(264, 22)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>import_0</value>
+    </param>
+    <param>
+      <key>import</key>
+      <value>import math</value>
+    </param>
+  </block>
+  <block>
+    <key>pluto_sink</key>
+    <param>
+      <key>attenuation</key>
+      <value>10.0</value>
+    </param>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>buffer_size</key>
+      <value>0x8000</value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>cyclic</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>auto_filter</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>filter</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(560, 338)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>pluto_sink_0</value>
+    </param>
+    <param>
+      <key>uri</key>
+      <value>usb:1.6.5</value>
+    </param>
+    <param>
+      <key>frequency</key>
+      <value>PlutoSDR_freq</value>
+    </param>
+    <param>
+      <key>bandwidth</key>
+      <value>1e6</value>
+    </param>
+    <param>
+      <key>samplerate</key>
+      <value>PlutoSDR_samp_rate</value>
+    </param>
+  </block>
+  <block>
+    <key>rational_resampler_xxx</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>decim</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>fbw</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(344, 330)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>rational_resampler_xxx_0</value>
+    </param>
+    <param>
+      <key>interp</key>
+      <value>int(PlutoSDR_samp_rate/samp_rate)</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>taps</key>
+      <value></value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>ccc</value>
+    </param>
+  </block>
+  <block>
+    <key>wxgui_scopesink2</key>
+    <param>
+      <key>ac_couple</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(816, 226)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>grid_pos</key>
+      <value></value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>wxgui_scopesink2_0</value>
+    </param>
+    <param>
+      <key>notebook</key>
+      <value></value>
+    </param>
+    <param>
+      <key>num_inputs</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>samp_rate</key>
+      <value>samp_rate</value>
+    </param>
+    <param>
+      <key>t_scale</key>
+      <value>0.01</value>
+    </param>
+    <param>
+      <key>title</key>
+      <value>Scope Plot</value>
+    </param>
+    <param>
+      <key>trig_mode</key>
+      <value>wxgui.TRIG_MODE_AUTO</value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>float</value>
+    </param>
+    <param>
+      <key>v_offset</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>v_scale</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>win_size</key>
+      <value></value>
+    </param>
+    <param>
+      <key>xy_mode</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>y_axis_label</key>
+      <value>Counts</value>
+    </param>
+  </block>
+  <connection>
+    <source_block_id>analog_sig_source_x_0</source_block_id>
+    <sink_block_id>blocks_multiply_xx_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>blocks_complex_to_float_0</source_block_id>
+    <sink_block_id>audio_sink_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>blocks_complex_to_float_0</source_block_id>
+    <sink_block_id>wxgui_scopesink2_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>blocks_multiply_xx_0</source_block_id>
+    <sink_block_id>blocks_complex_to_float_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>epy_block_0</source_block_id>
+    <sink_block_id>blocks_multiply_xx_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>1</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>epy_block_0</source_block_id>
+    <sink_block_id>rational_resampler_xxx_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>rational_resampler_xxx_0</source_block_id>
+    <sink_block_id>pluto_sink_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+</flow_graph>
